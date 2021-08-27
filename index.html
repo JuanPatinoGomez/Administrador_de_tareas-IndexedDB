@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contEncabezado">
+
+            <h1>Administrador de tareas</h1>
+
+            <div class="imagen-header">
+                <img src="imagenes/libreta.png" alt="">
+            </div>
+
+        </div>
+    </header>
+<!--aaaaaaaaaaa-->
+<!--mirare el diseño de los divTareas-->
+    <section id="contPrincipal">
+        <main>
+            <div class="dia glass">
+                <div class="panel-izquierdo glass">
+                    <h2>Lunes</h2>
+                    <img src="imagenes/btn-plus.png" btn-dia="lunes" alt="">
+                </div>
+
+                <div class="contenedor-tareas glass" cont-tareas-dia="lunes">
+                </div>
+            </div>
+            <div class="dia glass">
+                <div class="panel-izquierdo glass">
+                    <h2>Martes</h2>
+                    <img src="imagenes/btn-plus.png" btn-dia="martes" alt="">
+                </div>
+
+                <div class="contenedor-tareas glass" cont-tareas-dia="martes">
+                    
+                </div>
+            </div>
+            <div class="dia glass">
+                <div class="panel-izquierdo glass">
+                    <h2>Miercoles</h2>
+                    <img src="imagenes/btn-plus.png" btn-dia="miercoles" alt="">
+                </div>
+
+                <div class="contenedor-tareas glass" cont-tareas-dia="miercoles">
+                    
+                </div>
+            </div>
+            <div class="dia glass">
+                <div class="panel-izquierdo glass">
+                    <h2>Jueves</h2>
+                    <img src="imagenes/btn-plus.png" btn-dia="jueves" alt="">
+                </div>
+
+                <div class="contenedor-tareas glass" cont-tareas-dia="jueves">
+                    
+                </div>
+            </div>
+            <div class="dia glass">
+                <div class="panel-izquierdo glass">
+                    <h2>Viernes</h2>
+                    <img src="imagenes/btn-plus.png" btn-dia="viernes" alt="">
+                </div>
+
+                <div class="contenedor-tareas glass" cont-tareas-dia="viernes">
+                    
+                </div>
+            </div>
+            <div class="dia glass">
+                <div class="panel-izquierdo glass">
+                    <h2>Sabado</h2>
+                    <img src="imagenes/btn-plus.png" btn-dia="sabado" alt="">
+                </div>
+
+                <div class="contenedor-tareas glass" cont-tareas-dia="sabado">
+                    
+                </div>
+            </div>
+            <div class="dia glass">
+                <div class="panel-izquierdo glass">
+                    <h2>Domingo</h2>
+                    <img src="imagenes/btn-plus.png" btn-dia="domingo" alt="">
+                </div>
+
+                <div class="contenedor-tareas glass" cont-tareas-dia="domingo">
+                    
+                </div>
+            </div>
+        </main>
+        <!--VENTANA MODAL-->
+        <div class="modal">
+            <div class="modalCont">
+
+                <div class="modal-encabezado">
+                    <h2>Agregar nueva tarea</h2>
+                </div>
+                <div class="modal-cuerpo">
+                    <form action="#" id="formulario" tipo-accion="insertar">
+
+                        <label for="titulo">Título</label><br>
+                        <input type="text" name="titulo" id="titulo">
+                        <br>
+                        
+                        <label for="notas">Notas</label><br>
+                        <div class="cont-textArea">
+                            <textarea name="notas" id="notas"></textarea>
+                        </div>
+                        
+                        <br>
+
+                        <div class="option-dificultad">
+                            <label for="dificultad">Dificultad</label><br><br>
+                            <select name="dificultad" id="dificultad">
+                                <option value="Facil">Facil</option>
+                                <option value="Intermedia">Intermedia</option>
+                                <option value="Dificil">Difícil</option>
+                            </select>
+                        </div>
+                        
+
+                        <br>
+                        <br>
+                        <input type="hidden" id="idActu">
+                        <input type="submit" value="Enviar">
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="javascript/base_datos.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>
